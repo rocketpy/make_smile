@@ -3,6 +3,7 @@ import dlib
 from scipy.spatial import distance 
 from imutils import face_utils
 
+#  modules for opencv  https://github.com/opencv/opencv/tree/master/data/haarcascades
 
 def smiledetector(coordinates):
 	val1 = distance.euclidean(coordinates[3],coordinates[9])
