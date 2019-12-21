@@ -1,14 +1,14 @@
-import numpy as np
+import os
 import cv2
-#libs
+import numpy as np
+
+#  modules for opencv  https://github.com/opencv/opencv/tree/master/data/haarcascades
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 smile_cascade = cv2.CascadeClassifier('haarcascade_smile.xml')
-#haar
 
 cap = cv2.VideoCapture(0) #0 is default camera change it per your needs
-#setup vidcap
 
 while 1:
     ret, img = cap.read()
